@@ -1,0 +1,23 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "composite": true,
+    "target": "es2018",
+    "module": "ES2022",
+    "moduleResolution": "bundler",
+    "types": ["node"],
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true
+  },
+  "include": [
+    "**/vite.config.ts",
+    "**/vitest.config.ts",
+    "./types",
+    "tools",
+    "**/uno.config.ts",
+    "**/package.json",
+    "packages/*.d.ts",
+    "packages/_share/build"
+  ],
+  "exclude": ["**/node_modules"]
+}

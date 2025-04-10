@@ -1,0 +1,25 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "composite": true,
+    "tsBuildInfoFile": "./node_modules/.rd_cache",
+    "target": "ESNext",
+    "jsx": "preserve",
+    "jsxFactory": "h",
+    "jsxFragmentFactory": "Fragment",
+    "jsxImportSource": "vue",
+    "lib": ["esnext", "DOM", "DOM.Iterable"],
+    "strict": true,
+    "strictNullChecks": true
+  },
+  "include": ["packages", "packages/*.d.ts", "**/volar.d.ts"],
+  "exclude": [
+    "node_modules",
+    "**/dist",
+    "tools/build",
+    "**/vite.config.ts",
+    "**/uno.config.ts",
+    "**/rollup.*.ts",
+    "**/sws.config.ts"
+  ]
+}

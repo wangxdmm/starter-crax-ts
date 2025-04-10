@@ -1,0 +1,67 @@
+ignore = [
+  "**/packages/{unified-style,easy-admin,vue3-test,time,pages}",
+  "**/doc",
+  "**/{doc,tree-shaking}",
+  "**/tools/build",
+]
+catalog_remote_url = "http://192.168.1.70:5002/asv4/v4/catalog.yaml"
+git_path = "runafe.cn:8088/lamp/lamp-ui/unified/system.git"
+pre_build_commit = "43f5bd14733afbed2b0c3b8d46a39b83573ac355"
+diff_ignore = [
+  "**/env.d.ts",
+  "**/__tests__/*",
+  "**/magic-system/src/style.css",
+  "**/doc/*",
+  "**/butler.config.ts",
+  "**/package.json",
+  "**/*.toml",
+]
+registries = [ "http://192.168.1.70:8081/repository/runafe-hosted/" ]
+
+[meta."@runafe/codemirror-js-editor"]
+order = 130
+
+[meta."@monan/unocss-tricks"]
+order = 100
+
+[meta."@monan/vite-plugin-monorepo-debug"]
+order = 30
+
+[meta."@monan/node-shared"]
+order = 5
+
+[meta."@runafe/magic-system"]
+order = 140
+
+[meta."@runafe/vite-plugin-runa-autoimport"]
+order = 40
+
+[meta."@runafe/theme"]
+order = 70
+
+[meta."@runafe/flow-core"]
+order = 160
+
+[meta."@monan/simple-valid"]
+order = 110
+
+[meta."@monan/vue3-shared"]
+order = 120
+
+[meta."@monan/css-render-core"]
+order = 50
+
+[meta."@runafe/formkit-naive-ui"]
+order = 150
+
+[meta."@runafe/auto-import-api"]
+order = 90
+
+[meta."@monan/pack-icons"]
+order = 20
+
+[meta."@monan/css-render"]
+order = 60
+
+[meta."@runafe/easy-admin"]
+order = 170

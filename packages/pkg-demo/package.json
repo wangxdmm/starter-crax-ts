@@ -1,0 +1,63 @@
+{
+  "name": "pkg-demo",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "_description_",
+  "author": "wangxd <lovingskymm@foxmail.com>",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "types": {
+        "development": "./src/index.ts",
+        "default": "./types/index.d.ts"
+      },
+      "import": "./dist/index.mjs",
+      "default": "./dist/index.mjs"
+    },
+    "./time": {
+      "types": {
+        "development": "./src/time.ts",
+        "default": "./types/time.d.ts"
+      },
+      "import": "./dist/time.mjs",
+      "default": "./dist/time.mjs"
+    },
+    "./hash": {
+      "types": {
+        "development": "./src/hash.ts",
+        "default": "./types/hash.d.ts"
+      },
+      "import": "./dist/hash.mjs",
+      "default": "./dist/hash.mjs"
+    },
+    "./style": {
+      "types": {
+        "development": "./src/style.ts",
+        "default": "./types/style.d.ts"
+      },
+      "import": "./dist/style.mjs",
+      "default": "./dist/style.mjs"
+    },
+    "./package.json": "./package.json",
+    "./dist/*": "./dist/*",
+    "./*": "./*"
+  },
+  "main": "./dist/index.mjs",
+  "types": "./types/index.d.ts",
+  "files": [
+    "READE.md",
+    "dist",
+    "types"
+  ],
+  "scripts": {
+    "dev": "pnpm exec unbuild --watch",
+    "build": "pnpm exec unbuild"
+  },
+  "peerDependencies": {},
+  "dependencies": {},
+  "devDependencies": {
+    "@monan/shared": "catalog:",
+    "@monan/types": "catalog:",
+    "type-fest": "catalog:"
+  }
+}

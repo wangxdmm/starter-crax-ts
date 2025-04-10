@@ -1,0 +1,46 @@
+{
+  "name": "node-demo",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "_description_",
+  "author": "wangxd <lovingskymm@foxmail.com>",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "types": {
+        "development": "./src/index.ts",
+        "default": "./types/index.d.ts"
+      },
+      "import": "./dist/index.mjs",
+      "default": "./dist/index.mjs"
+    },
+    "./cli": {
+      "types": {
+        "development": "./src/cli.ts",
+        "default": "./types/cli.d.ts"
+      },
+      "import": "./dist/cli.mjs",
+      "default": "./dist/cli.mjs"
+    },
+    "./package.json": "./package.json",
+    "./dist/*": "./dist/*",
+    "./*": "./*"
+  },
+  "main": "./dist/index.mjs",
+  "types": "./types/index.d.ts",
+  "bin": {
+    "node-demo": "./bin/node-demo.mjs"
+  },
+  "files": [
+    "README.md",
+    "bin",
+    "dist",
+    "types"
+  ],
+  "scripts": {
+    "dev": "pnpm exec unbuild --watch",
+    "build": "pnpm exec unbuild"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

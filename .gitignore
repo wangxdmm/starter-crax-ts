@@ -1,0 +1,39 @@
+# common
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.eslintcache
+
+# node
+dist
+node_modules
+.pnpm-debug.log
+.dist
+.tsconfig*
+.turbo
+.env.local
+.env.*.local
+node-compile-cache
+
+# java
+.idea
+
+# rust
+target
+
+# temp
+temp
+.temp
+temp.json
+
+*.drawio
+vite.config.ts.timestamp*
+
+# crax
+packages/*/types
+
+# local env
+*.local

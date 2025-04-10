@@ -1,0 +1,39 @@
+{
+  "name": "starter-crax-ts",
+  "version": "1.0.0",
+  "packageManager": "pnpm@10.6.5",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "crax mono build",
+    "dev": "crax mono dev",
+    "lint": "eslint --cache .",
+    "docs": "pnpm -C docs run docs:dev",
+    "docs:build": "pnpm -C docs run docs:build",
+    "release": "crax mono release",
+    "test": "vitest",
+    "prepare": "simple-git-hooks"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "catalog:",
+    "@types/node": "catalog:",
+    "eslint": "catalog:",
+    "lint-staged": "catalog:",
+    "node-demo": "workspace:*",
+    "pkg-demo": "workspace:*",
+    "prettier": "catalog:",
+    "prettier-plugin-jsdoc": "catalog:",
+    "simple-git-hooks": "catalog:",
+    "tsx": "catalog:",
+    "typescript": "catalog:",
+    "unbuild": "catalog:",
+    "vite": "catalog:",
+    "vitest": "catalog:"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}
