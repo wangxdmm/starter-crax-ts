@@ -3,7 +3,7 @@ packages:
   - tools/*
 catalog:
   '@ant-design/colors': 7.2.0
-  '@antfu/eslint-config': 4.11.0
+  '@antfu/eslint-config': 4.12.0
   '@antv/x6': 2.18.1
   '@antv/x6-plugin-clipboard': 2.1.6
   '@antv/x6-plugin-history': 2.2.4
@@ -20,8 +20,8 @@ catalog:
   '@formkit/tempo': 0.1.2
   '@formkit/validation': 1.6.9
   '@formkit/vue': 1.6.9
-  '@iconify/collections': 1.0.531
-  '@iconify/json': 2.2.320
+  '@iconify/collections': 1.0.538
+  '@iconify/json': 2.2.328
   '@iconify/tools': 4.1.2
   '@iconify/utils': 2.3.0
   '@iconify/vue': 4.3.0
@@ -31,7 +31,7 @@ catalog:
   '@monan/types': 2.0.1
   '@runafe/elegant-router-vue': 1.0.12
   '@types/node': ^22.14.0
-  '@unocss/eslint-config': 66.1.0-beta.7
+  '@unocss/eslint-config': 66.1.0-beta.11
   '@unocss/preset-mini': 0.62.3
   '@vitejs/plugin-vue-jsx': 4.1.1
   '@vue/test-utils': 2.4.6
@@ -47,7 +47,7 @@ catalog:
   destr: 2.0.3
   emittery: 1.1.0
   enquirer: 2.4.1
-  eslint: 9.23.0
+  eslint: 9.24.0
   esno: 4.8.0
   execa: 9.5.2
   fast-glob: 3.3.3
@@ -89,16 +89,16 @@ catalog:
   tsx: 4.19.3
   type-fest: 4.36.0
   types-package-json: ^2.0.39
-  typescript: 5.8.2
+  typescript: 5.8.3
   unbuild: ^3.5.0
   unconfig: 7.3.0
-  unocss: 66.1.0-beta.7
+  unocss: 66.1.0-beta.11
   unocss-preset-scrollbar: 3.2.0
   unocss-tricks: 1.0.14
   unplugin-auto-import: 19.1.2
   unplugin-icons: 22.1.0
-  unplugin-unused: 0.4.3
-  unplugin-vue-components: 28.4.1
+  unplugin-unused: 0.4.4
+  unplugin-vue-components: 28.5.0
   viewerjs: 1.11.7
   vite: 6.2.0
   vite-plugin-top-level-await: ^1.5.0

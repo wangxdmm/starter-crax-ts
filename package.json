@@ -1,6 +1,7 @@
 {
   "name": "starter-crax-ts",
   "version": "1.0.0",
+  "private": true,
   "packageManager": "pnpm@10.6.5",
   "description": "",
   "main": "index.js",
@@ -8,8 +9,6 @@
     "build": "crax mono build",
     "dev": "crax mono dev",
     "lint": "eslint --cache .",
-    "docs": "pnpm -C docs run docs:dev",
-    "docs:build": "pnpm -C docs run docs:build",
     "release": "crax mono release",
     "test": "vitest",
     "prepare": "simple-git-hooks"
